@@ -26,12 +26,19 @@ REferensi PEgawai :
 Kegiatan : 1. Rutin 2. Tidak Rutin
 
 # INPUT Kegiatan
+
 Kegiatan :  < pilihan sesuai referensi kegiatan>
+
 Nama Kegiatan : diisi manual
+
 Tgl Pelaksanaan : diisi manual
+
 Tempat   	: Diisi manual
+
 PIC 		: Manual  ( bisa disiapkan referensi pegawai )
+
 Sudah /Belum   : Ya/Tidak
+
 Bukti Kegiatan  :  sediakan tempat upload file   ( min 4 file ) : Undangan, Absensi,  Foto, Notulensi
 
 
