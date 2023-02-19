@@ -62,7 +62,7 @@ Coded by www.creative-tim.com
           <li>
             <a href="./icons.html">
               <i class="nc-icon nc-diamond"></i>
-              <p>Icons</p>
+              <p>Tabel</p>
             </a>
           </li>
           <li>
