@@ -17,5 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/table-kegiatan', function () {
+    return view('table.table');
+});
 
 
