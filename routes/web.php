@@ -13,12 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/Dashboard', function () {
     return view('welcome');
 });
 
 Route::get('/table-kegiatan', function () {
     return view('table.table');
 });
+
+Route::get('/notification', function () {
+    return view('notification.notif');
+});
+
+/*Route::get('/user', function () {
+    return view('table.table');
+});*/
 
 
