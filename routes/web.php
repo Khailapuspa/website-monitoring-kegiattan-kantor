@@ -25,8 +25,8 @@ Route::get('/notification', function () {
     return view('notification.notif');
 });
 
-/*Route::get('/user', function () {
-    return view('table.table');
-});*/
+Route::get('/user', function () {
+    return view('user.user');
+});
 
 
