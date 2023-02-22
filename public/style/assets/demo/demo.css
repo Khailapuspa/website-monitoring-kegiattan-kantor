@@ -187,3 +187,8 @@
   outline: none;
   display: none;
 }
+/* Full height */
+.content.full-height {
+    min-height: 80vh;
+}
+

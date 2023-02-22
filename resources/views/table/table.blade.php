@@ -30,252 +30,110 @@
 @endsection
         
 @section('content')
-    <div class="content">
-        <div class="row">
+    <div class="content"> 
+        <div class="container-fluid">
           <div class="col-md-12">
+            <br>
             <div class="card">
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead class=" text-primary">
-                      <th>
-                        Name
-                      </th>
-                      <th>
-                        Country
-                      </th>
-                      <th>
-                        City
-                      </th>
-                      <th class="text-right">
-                        Salary
-                      </th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          Dakota Rice
-                        </td>
-                        <td>
-                          Niger
-                        </td>
-                        <td>
-                          Oud-Turnhout
-                        </td>
-                        <td class="text-right">
-                          $36,738
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Minerva Hooper
-                        </td>
-                        <td>
-                          Curaçao
-                        </td>
-                        <td>
-                          Sinaai-Waas
-                        </td>
-                        <td class="text-right">
-                          $23,789
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Sage Rodriguez
-                        </td>
-                        <td>
-                          Netherlands
-                        </td>
-                        <td>
-                          Baileux
-                        </td>
-                        <td class="text-right">
-                          $56,142
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Philip Chaney
-                        </td>
-                        <td>
-                          Korea, South
-                        </td>
-                        <td>
-                          Overland Park
-                        </td>
-                        <td class="text-right">
-                          $38,735
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Doris Greene
-                        </td>
-                        <td>
-                          Malawi
-                        </td>
-                        <td>
-                          Feldkirchen in Kärnten
-                        </td>
-                        <td class="text-right">
-                          $63,542
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Mason Porter
-                        </td>
-                        <td>
-                          Chile
-                        </td>
-                        <td>
-                          Gloucester
-                        </td>
-                        <td class="text-right">
-                          $78,615
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Jon Porter
-                        </td>
-                        <td>
-                          Portugal
-                        </td>
-                        <td>
-                          Gloucester
-                        </td>
-                        <td class="text-right">
-                          $98,615
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="card card-plain">
               <div class="card-header">
-                <h4 class="card-title"> Table on Plain Background</h4>
-                <p class="card-category"> Here is a subtitle for this table</p>
+                <h4 class="card-title">Badan Bagian Umum</h4>
+                <p class="card-category">Tabel Monitoring Kegiatan Bagian/Seksi Umum</p>
+                <hr>
               </div>
               <div class="card-body">
-                <div class="table-responsive">
+                <div class="table table-striped">
                   <table class="table">
                     <thead class=" text-primary">
                       <th>
-                        Name
+                        Kegiatan
                       </th>
                       <th>
-                        Country
+                        Nama Kegiatan
                       </th>
                       <th>
-                        City
+                        Tanggal Pelaksaan
                       </th>
-                      <th class="text-right">
-                        Salary
+                      <th>
+                        Tempat
+                      </th>
+                      <th>
+                        PIC
+                      </th>
+                      <th>
+                        Sudah/Belum
+                      </th>
+                      <th>
+                        Realisasi Pelaksaan
                       </th>
                     </thead>
                     <tbody>
                       <tr>
                         <td>
-                          Dakota Rice
+                          Rapat
                         </td>
                         <td>
-                          Niger
+                          Rapat Pembahasan SDM
                         </td>
                         <td>
-                          Oud-Turnhout
+                          15 Februari 2023
                         </td>
-                        <td class="text-right">
-                          $36,738
+                        <td>
+                          Aula KPPN
+                        </td>
+                        <td>
+                          Guntoro
+                        </td>
+                        <td>
+                          Belum
+                        </td>
+                        <td>
+                          Belum
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          Minerva Hooper
+                          Rapat
                         </td>
                         <td>
-                          Curaçao
+                          Rapat Pembahasan SDM
                         </td>
                         <td>
-                          Sinaai-Waas
+                          15 Februari 2023
                         </td>
-                        <td class="text-right">
-                          $23,789
+                        <td>
+                          Aula KPPN
+                        </td>
+                        <td>
+                          Guntoro
+                        </td>
+                        <td>
+                          Belum
+                        </td>
+                        <td>
+                          Belum
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          Sage Rodriguez
+                          Rapat
                         </td>
                         <td>
-                          Netherlands
+                          Rapat Pembahasan SDM
                         </td>
                         <td>
-                          Baileux
-                        </td>
-                        <td class="text-right">
-                          $56,142
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Philip Chaney
+                          15 Februari 2023
                         </td>
                         <td>
-                          Korea, South
+                          Aula KPPN
                         </td>
                         <td>
-                          Overland Park
-                        </td>
-                        <td class="text-right">
-                          $38,735
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Doris Greene
+                          Guntoro
                         </td>
                         <td>
-                          Malawi
+                          Belum
                         </td>
                         <td>
-                          Feldkirchen in Kärnten
-                        </td>
-                        <td class="text-right">
-                          $63,542
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Mason Porter
-                        </td>
-                        <td>
-                          Chile
-                        </td>
-                        <td>
-                          Gloucester
-                        </td>
-                        <td class="text-right">
-                          $78,615
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Jon Porter
-                        </td>
-                        <td>
-                          Portugal
-                        </td>
-                        <td>
-                          Gloucester
-                        </td>
-                        <td class="text-right">
-                          $98,615
+                          Belum
                         </td>
                       </tr>
                     </tbody>

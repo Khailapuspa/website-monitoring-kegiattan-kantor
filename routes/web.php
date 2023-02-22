@@ -18,6 +18,7 @@ Route::get('/Dashboard', function () {
 });
 
 Route::get('/table-kegiatan', function () {
+    //return view('table.table');
     return view('table.table');
 });
 
