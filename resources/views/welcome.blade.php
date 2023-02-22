@@ -77,6 +77,12 @@ Coded by www.creative-tim.com
               <p>User Profile</p>
             </a>
           </li>
+          <li>
+            <a href="{{url('percobaan')}}">
+              <i class="nc-icon nc-single-02"></i>
+              <p>Percobaan</p>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
