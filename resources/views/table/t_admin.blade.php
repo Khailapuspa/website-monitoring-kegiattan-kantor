@@ -2,7 +2,7 @@
 @section('nav')
     <ul class="nav">
           <li>
-            <a href="{{'Dashboard'}}">
+            <a href="{{url('Dashboard')}}">
               <i class="nc-icon nc-bank"></i>
               <p>Dashboard</p>
             </a>
@@ -41,9 +41,12 @@
                 <hr>
               </div>
               <div class="card-body">
-                <div class="table table-striped">
-                  <table class="table">
+                <div class="table table-striped table-responsive">
+                  <table class="table-bordered">
                     <thead class=" text-primary">
+                      <th>
+                        No
+                      </th>
                       <th>
                         Kegiatan
                       </th>
@@ -65,10 +68,19 @@
                       <th>
                         Realisasi Pelaksaan
                       </th>
+                      <th>
+                        Bukti Kegiatan
+                      </th>
+                      <th>
+                        Edit
+                      </th>
                     </thead>
                     <tbody>
                       <tr>
                         <td>
+                          1
+                        </td>
+                        <td>
                           Rapat
                         </td>
                         <td>
@@ -88,10 +100,57 @@
                         </td>
                         <td>
                           Belum
+                        </td>
+                        <td>
+                          <button class="btn btn-primary btn-block" onclick="">Lihat Bukti</button>
+                        </td>
+                        <td>
+                            <a class="btn btn-primary btn-sm" href="">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+                            <form class="d-line" action="">
+                                <button class="btn btn-danger btn-sm">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </form>
+                            
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td>
+                          2
+                        </td>
+                        <td>
+                          Rapat
+                        </td>
+                        <td>
+                          Rapat Pembahasan SDM
+                        </td>
+                        <td>
+                          15 Februari 2023
+                        </td>
+                        <td>
+                          Aula KPPN
+                        </td>
+                        <td>
+                          Guntoro
+                        </td>
+                        <td>
+                          Belum
+                        </td>
+                        <td>
+                          Belum
+                        </td>
+                        <td>
+                          <button class="btn btn-danger btn-block" onclick="">Lihat Bukti</button>
                         </td>
                       </tr>
                       <tr>
                         <td>
+                          3
+                        </td>
+                        <td>
                           Rapat
                         </td>
                         <td>
@@ -112,28 +171,8 @@
                         <td>
                           Belum
                         </td>
-                      </tr>
-                      <tr>
                         <td>
-                          Rapat
-                        </td>
-                        <td>
-                          Rapat Pembahasan SDM
-                        </td>
-                        <td>
-                          15 Februari 2023
-                        </td>
-                        <td>
-                          Aula KPPN
-                        </td>
-                        <td>
-                          Guntoro
-                        </td>
-                        <td>
-                          Belum
-                        </td>
-                        <td>
-                          Belum
+                          <button class="btn btn-danger btn-block" onclick="">Lihat Bukti</button>
                         </td>
                       </tr>
                     </tbody>
