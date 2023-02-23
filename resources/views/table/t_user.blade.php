@@ -41,9 +41,9 @@
                 <hr>
               </div>
               <div class="card-body">
-                <div class="table table-striped table-responsive">
+                <div class="table table-striped table-responsive-sm">
                   <table class="table-bordered">
-                    <thead class=" text-primary">
+                    <thead class="text text-primary text-center">
                       <th>
                         No
                       </th>

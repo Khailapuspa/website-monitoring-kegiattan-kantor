@@ -41,9 +41,9 @@
                 <hr>
               </div>
               <div class="card-body">
-                <div class="table table-striped table-responsive">
+                <div class="table table-striped table-responsive-sm table-full-width">
                   <table class="table-bordered">
-                    <thead class=" text-primary">
+                    <thead class=" text text-primary text-center">
                       <th>
                         No
                       </th>
@@ -104,16 +104,16 @@
                         <td>
                           <button class="btn btn-primary btn-block" onclick="">Lihat Bukti</button>
                         </td>
-                        <td>
-                            <a class="btn btn-primary btn-sm" href="">
+                        <td class="text-center" width="155px">
+                            <a class="btn btn-success btn-sm" href="">
+                                <i class="fa fa-plus"></i>
+                            </a>
+                            <a class="btn btn-info btn-sm" href="">
                                 <i class="fa fa-pencil"></i>
                             </a>
-                            <form class="d-line" action="">
-                                <button class="btn btn-danger btn-sm">
-                                    <i class="fa fa-trash"></i>
-                                </button>
-                            </form>
-                            
+                            <button class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                            </button>
                         </td>
                         
                       </tr>
@@ -143,7 +143,18 @@
                           Belum
                         </td>
                         <td>
-                          <button class="btn btn-danger btn-block" onclick="">Lihat Bukti</button>
+                          <button class="btn btn-primary btn-block" onclick="">Lihat Bukti</button>
+                        </td>
+                        <td class="text-center" width="155px">
+                            <a class="btn btn-success btn-sm" href="">
+                                <i class="fa fa-plus"></i>
+                            </a>
+                            <a class="btn btn-info btn-sm" href="">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+                            <button class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                            </button>
                         </td>
                       </tr>
                       <tr>
@@ -172,7 +183,18 @@
                           Belum
                         </td>
                         <td>
-                          <button class="btn btn-danger btn-block" onclick="">Lihat Bukti</button>
+                          <button class="btn btn-primary btn-block" onclick="">Lihat Bukti</button>
+                        </td>
+                        <td class="text-center" width="155px">
+                            <a class="btn btn-success btn-sm" href="">
+                                <i class="fa fa-plus"></i>
+                            </a>
+                            <a class="btn btn-info btn-sm" href="">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+                            <button class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                            </button>
                         </td>
                       </tr>
                     </tbody>
