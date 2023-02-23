@@ -18,7 +18,12 @@ Route::get('/Dashboard', function () {
 });
 
 Route::get('/table-kegiatan', function () {
-    return view('table.table');
+    //return view('table.table');
+    return view('table.t_user');
+});
+Route::get('/table-kegiatan-admin', function () {
+    //return view('table.table');
+    return view('table.t_admin');
 });
 
 Route::get('/notification', function () {
