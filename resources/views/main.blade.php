@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('style/assets/img/apple-icon.png')}}">
-  <link rel="icon" type="image/png" href="{{asset('style/assets/img/favicon.png')}}">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
     Monitoring Kegiatan Kantor
@@ -21,13 +22,13 @@
 </head>
 
 <body class="">
-  <div class="wrapper">
+  <div class="wrapper ">
     <div class="sidebar" data-color="white" data-active-color="danger">
       <div class="logo">
         <a href="https://www.creative-tim.com" class="simple-text logo-mini">
-          <div class="logo-image-small">
-            <img src="{{asset('style/assets/img/logo-small.png')}}">
-          </div>
+          <!-- <div class="logo-image-small">
+            <img src="./assets/img/logo-small.png">
+          </div> -->
           <!-- <p>CT</p> -->
         </a>
         <a href="https://www.creative-tim.com" class="simple-text logo-normal">
@@ -38,17 +39,35 @@
         </a>
       </div>
       <div class="sidebar-wrapper">
-        @yield('nav')
+        <ul class="nav">
+          <li class="active ">
+            <a href="javascript:;">
+              <i class="nc-icon nc-bank"></i>
+              <p>First Item</p>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <i class="nc-icon nc-diamond"></i>
+              <p>Second Item</p>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <i class="nc-icon nc-pin-3"></i>
+              <p>Third Item</p>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="main-panel">
+    <div class="main-panel" style="height: 100vh;">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
         <div class="container-fluid">
           <div class="navbar-wrapper">
             <div class="navbar-toggle">
               <button type="button" class="navbar-toggler">
-                <span class="sr-only">Toggle navigation</span>
                 <span class="navbar-toggler-bar bar1"></span>
                 <span class="navbar-toggler-bar bar2"></span>
                 <span class="navbar-toggler-bar bar3"></span>
@@ -94,23 +113,19 @@
                   <a class="dropdown-item" href="#">Something else here</a>
                 </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link btn-rotate" href="javascript:;">
-                  <i class="nc-icon nc-settings-gear-65"></i>
-                  <p>
-                    <span class="d-lg-none d-md-block">Account</span>
-                  </p>
-                </a>
-              </li>
             </ul>
           </div>
         </div>
       </nav>
       <!-- End Navbar -->
-      <div class="content full-height">
-        @yield('content')
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="description">Your content here</h3>
+          </div>
+        </div>
       </div>
-      <footer class="footer footer-black  footer-white ">
+      <footer class="footer" style="position: absolute; bottom: 0; width: -webkit-fill-available;">
         <div class="container-fluid">
           <div class="row">
             <nav class="footer-nav">
@@ -122,9 +137,7 @@
             </nav>
             <div class="credits ml-auto">
               <span class="copyright">
-                @ <script>
-                  document.write(new Date().getFullYear())
-                </script>, made with <i class="fa fa-heart heart"></i> by Creative Tim
+                © 2020, made with <i class="fa fa-heart heart"></i> by Creative Tim
               </span>
             </div>
           </div>
@@ -132,25 +145,19 @@
       </footer>
     </div>
   </div>
-  <script src="{{asset('style/assets/js/core/jquery.min.js')}}"></script>
-  <script src="{{asset('style/assets/js/core/popper.min.js')}}"></script>
-  <script src="{{asset('style/assets/js/core/bootstrap.min.js')}}"></script>
-  <script src="{{asset('style/assets/js/plugins/perfect-scrollbar.jquery.min.js')}}"></script>
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/jquery.min.js"></script>
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap.min.js"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
   <!--  Google Maps Plugin    -->
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Chart JS -->
-  <script src="{{asset('style/assets/js/plugins/chartjs.min.js')}}"></script>
+  <script src="./assets/js/plugins/chartjs.min.js"></script>
   <!--  Notifications Plugin    -->
-  <script src="{{asset('style/assets/js/plugins/bootstrap-notify.js')}}"></script>
+  <script src="./assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="{{asset('style/assets/js/paper-dashboard.min.js?v=2.0.1')}}" type="text/javascript"></script><!-- Paper Dashboard DEMO methods, don't include it in your project! -->
-  <script src="{{asset('style/assets/demo/demo.js')}}"></script>
-  <script>
-    $(document).ready(function() {
-      // Javascript method's body can be found in assets/assets-for-demo/js/demo.js
-      demo.initChartsPages();
-    });
-  </script>
+  <script src="./assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script>
 </body>
 
 </html>

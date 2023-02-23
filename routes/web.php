@@ -34,5 +34,9 @@ Route::get('/user', function () {
     return view('user.user');
 });
 
+Route::get('/percobaan', function () {
+    return view('percobaan.percobaan');
+});
+
 
 
