@@ -34,12 +34,12 @@
           <div class="col-md-4">
             <div class="card card-user">
               <div class="image">
-                <img src="{{'style/paper-dashboard-master/assets/img/damir-bosnjak.jpg'}}" alt="...">
+                <img src="{{'style/assets/img/damir-bosnjak.jpg'}}" alt="...">
               </div>
               <div class="card-body">
                 <div class="author">
                   <a href="#">
-                    <img class="avatar border-gray" src="{{'style/paper-dashboard-master/assets/img/mike.jpg'}}" alt="...">
+                    <img class="avatar border-gray" src="{{'style/assets/img/mike.jpg'}}" alt="...">
                     <h5 class="title">Khaila Puspa Maharani</h5>
                   </a>
                   <p class="description">
@@ -79,7 +79,7 @@
                     <div class="row">
                       <div class="col-md-2 col-2">
                         <div class="avatar">
-                          <img src="{{'style/paper-dashboard-master/assets/img/faces/ayo-ogunseinde-2.jpg'}}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                          <img src="{{'style/assets/img/faces/ayo-ogunseinde-2.jpg'}}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                         </div>
                       </div>
                       <div class="col-md-7 col-7">
@@ -96,7 +96,7 @@
                     <div class="row">
                       <div class="col-md-2 col-2">
                         <div class="avatar">
-                          <img src="{{'style/paper-dashboard-master/assets/img/faces/joe-gardner-2.jpg'}}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                          <img src="{{'style/assets/img/faces/joe-gardner-2.jpg'}}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                         </div>
                       </div>
                       <div class="col-md-7 col-7">
@@ -113,7 +113,7 @@
                     <div class="row">
                       <div class="col-md-2 col-2">
                         <div class="avatar">
-                          <img src="{{'style/paper-dashboard-master/assets/img/faces/clem-onojeghuo-2.jpg'}}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                          <img src="{{'style/assets/img/faces/clem-onojeghuo-2.jpg'}}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                         </div>
                       </div>
                       <div class="col-ms-7 col-7">
