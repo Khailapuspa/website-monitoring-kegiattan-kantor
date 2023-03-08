@@ -31,7 +31,7 @@ Route::get('/notification', function () {
 });
 
 Route::get('/user', function () {
-    return view('user.user');
+    return view('user.data');
 });
 
 Route::get('/percobaan', function () {
