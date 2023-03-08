@@ -103,13 +103,53 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        DB::unprepared('CREATE TRIGGER update_status AFTER INSERT ON seksi_MSKI_upload
+        DB::unprepared('CREATE TRIGGER update_status1 AFTER INSERT ON seksi_MSKI_upload
                 FOR EACH ROW
                 BEGIN
                     IF NEW.Bukti_Kegiatan IS NOT NULL THEN
                         UPDATE seksi_MSKI SET `S/B`="sudah" WHERE id=NEW.id_seksi_MSKI;
                     ELSE
                         UPDATE seksi_MSKI SET `S/B`="belum" WHERE id=NEW.id_seksi_MSKI;
+                    END IF;
+                END;');
+
+        DB::unprepared('CREATE TRIGGER update_status2 AFTER INSERT ON seksi_Vera_upload
+                FOR EACH ROW
+                BEGIN
+                    IF NEW.Bukti_Kegiatan IS NOT NULL THEN
+                        UPDATE seksi_Vera SET `S/B`="sudah" WHERE id=NEW.id_seksi_Vera;
+                    ELSE
+                        UPDATE seksi_Vera SET `S/B`="belum" WHERE id=NEW.id_seksi_Vera;
+                    END IF;
+                END;');
+        
+        DB::unprepared('CREATE TRIGGER update_status3 AFTER INSERT ON seksi_bank_upload
+                FOR EACH ROW
+                BEGIN
+                    IF NEW.Bukti_Kegiatan IS NOT NULL THEN
+                        UPDATE seksi_bank SET `S/B`="sudah" WHERE id=NEW.id_seksi_bank;
+                    ELSE
+                        UPDATE seksi_bank SET `S/B`="belum" WHERE id=NEW.id_seksi_bank;
+                    END IF;
+                END;');
+
+        DB::unprepared('CREATE TRIGGER update_status4 AFTER INSERT ON seksi_pencairan_dana_upload
+                FOR EACH ROW
+                BEGIN
+                    IF NEW.Bukti_Kegiatan IS NOT NULL THEN
+                        UPDATE pencairan_dana SET `S/B`="sudah" WHERE id=NEW.id_pencairan_dana;
+                    ELSE
+                        UPDATE seksi_MSKI SET `S/B`="belum" WHERE id=NEW.id_pencairan_dana;
+                    END IF;
+                END;');
+
+        DB::unprepared('CREATE TRIGGER update_status5 AFTER INSERT ON bagian_umum_upload
+                FOR EACH ROW
+                BEGIN
+                    IF NEW.Bukti_Kegiatan IS NOT NULL THEN
+                        UPDATE bagian_umum SET `S/B`="sudah" WHERE id=NEW.id_bagian_umum;
+                    ELSE
+                        UPDATE bagian_umum SET `S/B`="belum" WHERE id=NEW.id_bagian_umum;
                     END IF;
                 END;');
     }
@@ -121,16 +161,17 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bagian_umum');
-        Schema::dropIfExists('seksi_pencairan_dana');
-        Schema::dropIfExists('seksi_bank');
-        Schema::dropIfExists('seksi_Vera');
-        Schema::dropIfExists('seksi_MSKI');
         Schema::dropIfExists('bagian_umum_upload');
         Schema::dropIfExists('seksi_pencairan_dana_upload');
         Schema::dropIfExists('seksi_bank_upload');
         Schema::dropIfExists('seksi_Vera_upload');
         Schema::dropIfExists('seksi_MSKI_upload');
+        Schema::dropIfExists('bagian_umum');
+        Schema::dropIfExists('seksi_pencairan_dana');
+        Schema::dropIfExists('seksi_bank');
+        Schema::dropIfExists('seksi_Vera');
+        Schema::dropIfExists('seksi_MSKI');
+       
         DB::unprepared('DROP TRIGGER IF EXISTS update_seksi_mski_upload');
     
     }
