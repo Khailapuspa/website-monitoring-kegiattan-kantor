@@ -41,9 +41,27 @@
                 <hr>
               </div>
               <div class="card-body">
-                <div class="table table-striped table-responsive">
+                <div class="table table-striped table-responsive-sm">
+                  <nav class="navbar justify-content-end">
+                      <form>
+                        <div class="input-group no-border">
+                          <input type="text" value="" class="form-control" placeholder="Search...">
+                          <div class="input-group-append">
+                            <div class="input-group-text">
+                              <i class="nc-icon nc-zoom-split"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="text-right">
+                        <a class="btn btn-success" href="">
+                          <i>add</i>
+                          <i class="fa fa-plus-square"></i>
+                        </a>
+                      </div>
+                </nav>
                   <table class="table-bordered">
-                    <thead class=" text-primary">
+                    <thead class=" text text-primary text-center">
                       <th>
                         No
                       </th>
@@ -104,16 +122,14 @@
                         <td>
                           <button class="btn btn-primary btn-block" onclick="">Lihat Bukti</button>
                         </td>
-                        <td>
-                            <a class="btn btn-primary btn-sm" href="">
+                        <td class="text-center" width="155px">
+                            
+                            <a class="btn btn-info btn-sm" href="">
                                 <i class="fa fa-pencil"></i>
                             </a>
-                            <form class="d-line" action="">
-                                <button class="btn btn-danger btn-sm">
-                                    <i class="fa fa-trash"></i>
-                                </button>
-                            </form>
-                            
+                            <button class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                            </button>
                         </td>
                         
                       </tr>
@@ -143,7 +159,16 @@
                           Belum
                         </td>
                         <td>
-                          <button class="btn btn-danger btn-block" onclick="">Lihat Bukti</button>
+                          <button class="btn btn-primary btn-block" onclick="">Lihat Bukti</button>
+                        </td>
+                        <td class="text-center" width="155px">
+                            
+                            <a class="btn btn-info btn-sm" href="">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+                            <button class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                            </button>
                         </td>
                       </tr>
                       <tr>
@@ -172,12 +197,22 @@
                           Belum
                         </td>
                         <td>
-                          <button class="btn btn-danger btn-block" onclick="">Lihat Bukti</button>
+                          <button class="btn btn-primary btn-block" onclick="">Lihat Bukti</button>
+                        </td>
+                        <td class="text-center" width="155px">
+                            
+                            <a class="btn btn-info btn-sm" href="">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+                            <button class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash"></i>
+                            </button>
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
+                
               </div>
             </div>
           </div>
