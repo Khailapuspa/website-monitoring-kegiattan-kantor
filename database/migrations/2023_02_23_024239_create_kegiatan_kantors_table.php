@@ -69,36 +69,36 @@ return new class extends Migration
         });
 
         Schema::create('bagian_umum_upload', function (Blueprint $table) {
-            $table->unsignedbigIncrements('id');
-            $table->foreign('id_umum')->references('id')->on('bagian_umum');
+            $table->bigIncrements('id');
+            $table->foreignId('id_bagian_umum')->references('id')->on('bagian_umum');
             $table->binary('Bukti_Kegiatan')->nullable();
             $table->timestamps();
         });
 
         Schema::create('seksi_pencairan_dana_upload', function (Blueprint $table) {
-            $table->unsignedbigIncrements('id');
-            $table->foreign('id_pencairan_dana')->references('id')->on('seksi_pencairan_dana');
+            $table->bigIncrements('id');
+            $table->foreignId('id_pencairan_dana')->references('id')->on('seksi_pencairan_dana');
             $table->binary('Bukti_Kegiatan')->nullable();
             $table->timestamps();
         });
 
         Schema::create('seksi_bank_upload', function (Blueprint $table) {
-            $table->unsignedbigIncrements('id');
-            $table->foreign('id_seksi_bank')->references('id')->on('seksi_bank');
+            $table->bigIncrements('id');
+            $table->foreignId('id_seksi_bank')->references('id')->on('seksi_bank');
             $table->binary('Bukti_Kegiatan')->nullable();
             $table->timestamps();
         });
 
         Schema::create('seksi_Vera_upload', function (Blueprint $table) {
-            $table->unsignedbigIncrements('id');
-            $table->foreign('id_seksi_Vera')->references('id')->on('seksi_Vera');
+            $table->bigIncrements('id');
+            $table->foreignId('id_seksi_Vera')->references('id')->on('seksi_Vera');
             $table->binary('Bukti_Kegiatan')->nullable();
             $table->timestamps();
         });
 
         Schema::create('seksi_MSKI_upload', function (Blueprint $table) {
-            $table->unsignedbigIncrements('id');
-            $table->foreign('id_seksi_MSKI')->references('id')->on('seksi_MSKI');
+            $table->bigIncrements('id');
+            $table->foreignId('id_seksi_MSKI')->references('id')->on('seksi_MSKI');
             $table->binary('Bukti_Kegiatan')->nullable();
             $table->timestamps();
         });
