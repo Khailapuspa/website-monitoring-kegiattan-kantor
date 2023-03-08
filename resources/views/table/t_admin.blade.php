@@ -41,7 +41,25 @@
                 <hr>
               </div>
               <div class="card-body">
-                <div class="table table-striped table-responsive-sm table-full-width">
+                <div class="table table-striped table-responsive-sm">
+                  <nav class="navbar justify-content-end">
+                      <form>
+                        <div class="input-group no-border">
+                          <input type="text" value="" class="form-control" placeholder="Search...">
+                          <div class="input-group-append">
+                            <div class="input-group-text">
+                              <i class="nc-icon nc-zoom-split"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="text-right">
+                        <a class="btn btn-success" href="">
+                          <i>add</i>
+                          <i class="fa fa-plus-square"></i>
+                        </a>
+                      </div>
+                </nav>
                   <table class="table-bordered">
                     <thead class=" text text-primary text-center">
                       <th>
@@ -105,9 +123,7 @@
                           <button class="btn btn-primary btn-block" onclick="">Lihat Bukti</button>
                         </td>
                         <td class="text-center" width="155px">
-                            <a class="btn btn-success btn-sm" href="">
-                                <i class="fa fa-plus"></i>
-                            </a>
+                            
                             <a class="btn btn-info btn-sm" href="">
                                 <i class="fa fa-pencil"></i>
                             </a>
@@ -146,9 +162,7 @@
                           <button class="btn btn-primary btn-block" onclick="">Lihat Bukti</button>
                         </td>
                         <td class="text-center" width="155px">
-                            <a class="btn btn-success btn-sm" href="">
-                                <i class="fa fa-plus"></i>
-                            </a>
+                            
                             <a class="btn btn-info btn-sm" href="">
                                 <i class="fa fa-pencil"></i>
                             </a>
@@ -186,9 +200,7 @@
                           <button class="btn btn-primary btn-block" onclick="">Lihat Bukti</button>
                         </td>
                         <td class="text-center" width="155px">
-                            <a class="btn btn-success btn-sm" href="">
-                                <i class="fa fa-plus"></i>
-                            </a>
+                            
                             <a class="btn btn-info btn-sm" href="">
                                 <i class="fa fa-pencil"></i>
                             </a>
@@ -200,6 +212,7 @@
                     </tbody>
                   </table>
                 </div>
+                
               </div>
             </div>
           </div>
